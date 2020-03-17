@@ -29,6 +29,7 @@ app.listen(PORT, function () { console.log('Chat-Bot listening !') })
 app.delete('/messages/last', (req, res) => {
     const col = getCol();
     col.estimatedDocumentCount().then((count) => {
+        if(count == 0) throw "error nothing to skip"; 
         col.find({}).skip(count - 2).toArray((err, data) => {
             if(err) throw err;
             data.forEach(doc => {
