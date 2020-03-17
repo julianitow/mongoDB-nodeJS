@@ -1,0 +1,15 @@
+{
+  "name": "mongodb-tp-esgi",
+  "version": "1.0.0",
+  "description": "Programme pour s'entrainer à la manipulation de mongodb avec nodeJS",
+  "main": "dates.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dates.js"
+  },
+  "author": "Julien GUILLAN",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.5.5"
+  }
+}
