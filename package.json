@@ -5,11 +5,12 @@
   "main": "dates.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dates.js"
+    "start": "node server.js"
   },
   "author": "Julien GUILLAN",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "mongodb": "^3.5.5"
   }
 }
